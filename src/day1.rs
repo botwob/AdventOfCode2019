@@ -1,12 +1,12 @@
 use crate::globalfuncs;
 
 pub fn part1() {
-    let numbers = globalfuncs::read_data("data/input", "\n");
+    let numbers = globalfuncs::read_data("data/day1_input", "\n");
     println!("{}", numbers.iter().fold(0, |acc, fuel| acc + (fuel/3) -2 ))
 }
 
 pub fn part2() {
-    let numbers = globalfuncs::read_data("data/input","\n");
+    let numbers = globalfuncs::read_data("data/day1_input","\n");
     println!("{}", numbers.iter().fold(0, |acc, fuel| acc + mass_to_zero(*fuel)))
 }
 
